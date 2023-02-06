@@ -33,7 +33,8 @@
             "lastName": "Ittycheriah",
             "age": 34,
             "computerId": 1,
-            "departmentId": 3
+            "departmentId": 3,
+            "location": "Memphis"
         },
         {
             "id": 2,
@@ -41,7 +42,8 @@
             "lastName": "Johnson",
             "age": 28,
             "computerId": 4,
-            "departmentId": 2
+            "departmentId": 2,
+            "location": "Nashville"
         },
         {
             "id": 3,
@@ -49,7 +51,8 @@
             "lastName": "Byard",
             "age": 32,
             "computerId": 3,
-            "departmentId": 3
+            "departmentId": 3,
+            "location": "Nashville"
         },
         {
             "id": 4,
@@ -57,7 +60,8 @@
             "lastName": "Carsello",
             "age": 5,
             "computerId": 2,
-            "departmentId": 1
+            "departmentId": 1,
+            "location": "Chattanooga"
         },
         {
             "id": 5,
@@ -65,7 +69,8 @@
             "lastName": "Boutros-Ghali",
             "age": 93,
             "computerId": 5,
-            "departmentId": 4
+            "departmentId": 4,
+            "location": "Memphis, Egypt"
         }
     ],
     "departments": [

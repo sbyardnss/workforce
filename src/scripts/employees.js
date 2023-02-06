@@ -1,4 +1,4 @@
-import { getEmployees, getComputers, getDepartments } from "./dataAccess.js";
+import { getEmployees, getComputers, getDepartments, getCustomers, getEmployeeCustomers } from "./dataAccess.js";
 
 
 const convertEmployeesToList = (obj) => {
@@ -42,10 +42,18 @@ export const EmployeeList = () => {
 //     return html
 // }
 
+
+// const employeeCustomerBridge = (obj) => {
+//     return parseInt(obj.employeeId) === parseInt(employee.id)
+// }
+
+
 export const EmployeeComputers = () => {
     const employees = getEmployees()
     const computers = getComputers()
     const departments = getDepartments()
+    const customers = getCustomers()
+    const employeeCustomers = getEmployeeCustomers()
     let html = `<div class="employee">`
         for (const employee of employees) {
             const employeeComputer = computers.find(computer => {
@@ -54,6 +62,12 @@ export const EmployeeComputers = () => {
             const employeeDepartment = departments.find(dept => {
                 return dept.id === parseInt(employee.departmentId)
             })
+            // const relationships = employeeCustomers.filter(employeeCustomerBridge)
+            // const assignedCustomers = relationships.map(rel => {
+            //     return customers.find(customer => {
+            //         customer.id === rel.customerId
+            //     })
+            // })
             html += `<div class="individualEmployee">
             <header class="employee__name">
                 <h3>${employee.firstName} ${employee.lastName}</h3>
