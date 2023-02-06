@@ -1,10 +1,17 @@
 import { Workforce } from "./workforce.js"
-
+import { fetchEmployees, fetchComputers, fetchDepartments } from "./dataAccess.js"
 
 const mainContainer = document.querySelector("#container")
 
 const render = () => {
-    mainContainer.innerHTML = Workforce()
+    fetchEmployees()
+    .then(() => fetchComputers())
+    .then(() => fetchDepartments())
+    .then(
+        () => {
+            mainContainer.innerHTML = Workforce()
+        }
+    )    
 }
 
 render()

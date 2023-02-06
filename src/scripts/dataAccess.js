@@ -10,7 +10,7 @@ export const fetchEmployees = () => {
     .then(response => response.json())
     .then(
         (data) => {
-            applicationState.employees =data
+            applicationState.employees = data
         }
     )
 }
@@ -20,7 +20,17 @@ export const fetchComputers = () => {
     .then(response => response.json())
     .then(
         (data) => {
-            applicationState.employees =data
+            applicationState.computers = data
+        }
+    )
+}
+
+export const fetchDepartments = () => {
+    return fetch(`${API}/departments`)
+    .then(response => response.json())
+    .then(
+        (data) => {
+            applicationState.departments = data
         }
     )
 }
@@ -31,4 +41,8 @@ export const getEmployees = () => {
 
 export const getComputers = () => {
     return applicationState.computers.map(computer => ({...computer}))
+}
+
+export const getDepartments = () => {
+    return applicationState.departments.map(dept => ({...dept}))
 }
