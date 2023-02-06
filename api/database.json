@@ -1,0 +1,61 @@
+{
+    "computers": [
+        {
+            "id": 1,
+            "model": "Macbook Pro",
+            "year": 2015
+        },
+        {
+            "id": 2,
+            "model": "Samsung Galaxy",
+            "year": 2017
+        },
+        {
+            "id": 3,
+            "model": "Macbook Pro",
+            "year": 2019
+        },
+        {
+            "id": 4,
+            "model": "HP Pavilion",
+            "year": 2017
+        },
+        {
+            "id": 5,
+            "model": "HP Pavilion",
+            "year": 2018
+        }
+    ],
+    "employees": [
+        {
+            "id": 1,
+            "firstName": "Rainu",
+            "lastName": "Ittycheriah",
+            "computerId": 1
+        },
+        {
+            "id": 2,
+            "firstName": "Ralph",
+            "lastName": "Johnson",
+            "computerId": 4
+        },
+        {
+            "id": 3,
+            "firstName": "Stephen",
+            "lastName": "Byard",
+            "computerId": 3
+        },
+        {
+            "id": 4,
+            "firstName": "Lilo",
+            "lastName": "Carsello",
+            "computerId": 2
+        },
+        {
+            "id": 5,
+            "firstName": "Boutros",
+            "lastName": "Boutros-Ghali",
+            "computerId": 5
+        }
+    ]
+}
