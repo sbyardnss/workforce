@@ -50,7 +50,7 @@ export const fetchCustomers = () => {
 
 export const fetchEmployeeCustomers = () => {
     return fetch(`${API}/employeeCustomers`)
-    .then(response = response.json())
+    .then(response => response.json())
     .then(
         (data) => {
             applicationState.employeeCustomers = data
