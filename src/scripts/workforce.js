@@ -1,6 +1,7 @@
 import { EmployeeComputers, EmployeeList } from "./employees.js"
 import { ComputerList } from "./computers.js"
 import { Departments } from "./departments.js"
+import { CustomerInfo } from "./customers.js"
 
 export const Workforce = () => {
     let html = `
@@ -19,8 +20,13 @@ export const Workforce = () => {
             <h2>Departments</h2>
             ${Departments()}
     </article>
-    <article class="assignedComputers">
-        ${EmployeeComputers()}
+    <article class="assignedComputersAndAssignedEmployees">
+        <section id="employeeInfo">
+            ${EmployeeComputers()}
+        </section>
+        <section id="customerInfo">
+            ${CustomerInfo()}
+        </section>
     </article>`
     return html
 }

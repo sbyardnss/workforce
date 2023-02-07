@@ -1,5 +1,6 @@
 .employeeAndComputerList {
     display: flex;
+    justify-content: space-around;
     border: 1px solid rebeccapurple;
     border-radius: 6px 6px 0 0;
     width: 800px;
@@ -18,17 +19,33 @@
     margin: 10px 0 10px 0;
 }
 
-.assignedComputers {
+.assignedComputersAndAssignedEmployees {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     border: 1px solid gray;
     border-radius: 0 0 6px 6px;
     background-color: blanchedalmond;
     width: 800px;
+    padding: 20px 0;
 }
 
 #employeeComputers {
     list-style-type: none;
 }
 
-.employee {
+.customer, .employee {
     padding: 20px;
+    margin: 2px;
+}
+.customer {
+    border: 4px solid darkolivegreen;
+    border-radius: 0 4px 4px 0;
+    background-color: lightpink;
+    
+}
+.employee {
+    border: 4px solid darkcyan;
+    border-radius: 4px 0 4px 4px;
+    background-color: azure;
 }

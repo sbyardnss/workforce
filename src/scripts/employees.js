@@ -105,26 +105,27 @@ export const EmployeeComputers = () => {
             // </div>`
             html += `
             <div class="individualEmployee">
-            <header class="employee__name">
-                <h3>${employee.firstName} ${employee.lastName}</h3>
-            </header>
-            <section class="employee__department">
-                Works in the ${employeeDepartment.name} department
-            </section>
-            <section class="employee__computer">
-                Currently using a ${employeeComputer.year} ${employeeComputer.model}
-            </section>
-            <section class="employee__location">
-                Works at the ${employee.location} office
-            </section>
-            <section class="employee__customers">
-                Has worked for the following customers:
-                <ul>
-                    ${
-                        relationships.map(convertAssignedCustomersToList).join("")
-                    }
-                </ul>
-            </section>`
+                <header class="employee__name">
+                    <h3>${employee.firstName} ${employee.lastName}</h3>
+                </header>
+                <section class="employee__department">
+                    Works in the ${employeeDepartment.name} department
+                </section>
+                <section class="employee__computer">
+                    Currently using a ${employeeComputer.year} ${employeeComputer.model}
+                </section>
+                <section class="employee__location">
+                    Works at the ${employee.location} office
+                </section>
+                <section class="employee__customers">
+                    Has worked for the following customers:
+                    <ul>
+                        ${
+                            relationships.map(convertAssignedCustomersToList).join("")
+                        }
+                    </ul>
+                </section>
+            </div>`
         }
     html += `</div>`
     return html
